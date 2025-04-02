@@ -2,6 +2,7 @@ import {
   onNewPasswordProvidedEvent,
   WorkflowSettings,
   WorkflowTrigger,
+  invalidateFormField,
 } from "@kinde/infrastructure";
 
 export const workflowSettings: WorkflowSettings = {
