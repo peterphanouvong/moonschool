@@ -27,13 +27,21 @@ export default async function PasswordWorkflow({
   const isMinCharacters = context.auth.firstPassword.length >= 50;
   console.log("PasswordWorkflow: isMinCharacters", isMinCharacters);
 
-  kinde.widget.invalidateFormField(
-    "p_password_1",
-    "Provide a password at least 50 characters long"
-  );
+  try {
+    kinde.widget.invalidateFormField(
+      "p_password_1",
+      "Provide a password at least 50 characters long"
+    );
+  } catch (error) {
+    console.error("PasswordWorkflow: error", error);
+  }
 
-  invalidateFormField(
-    "p_password_1",
-    "Provide a password at least 50 characters long"
-  );
+  try {
+    invalidateFormField(
+      "p_password_1",
+      "Provide a password at least 50 characters long"
+    );
+  } catch (error) {
+    console.error("PasswordWorkflow: error", error);
+  }
 }
