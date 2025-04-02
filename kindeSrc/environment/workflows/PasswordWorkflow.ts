@@ -29,4 +29,9 @@ export default async function PasswordWorkflow({
     "p_password_1",
     "Provide a password at least 50 characters long"
   );
+
+  invalidateFormField(
+    "p_password_1",
+    "Provide a password at least 50 characters long"
+  );
 }
