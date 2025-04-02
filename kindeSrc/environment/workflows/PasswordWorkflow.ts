@@ -17,6 +17,7 @@ export const workflowSettings: WorkflowSettings = {
     "kinde.widget": {}, // Required to invalidate the form
     "kinde.localization": {}, // Required for localization
     "kinde.mfa": {}, // Required for multi-factor authentication
+    "kinde.fetch": {}, // Required for external API calls
   },
 };
 
@@ -25,6 +26,11 @@ export default async function PasswordWorkflow({
 }: onNewPasswordProvidedEvent) {
   const isMinCharacters = context.auth.firstPassword.length >= 50;
   console.log("PasswordWorkflow: isMinCharacters", isMinCharacters);
+
+  kinde.widget.invalidateFormField(
+    "p_password_1",
+    "Provide a password at least 50 characters long"
+  );
 
   invalidateFormField(
     "p_password_1",
