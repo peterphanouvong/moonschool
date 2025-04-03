@@ -24,12 +24,12 @@ export const workflowSettings: WorkflowSettings = {
 export default async function PasswordWorkflow({
   context,
 }: onNewPasswordProvidedEvent) {
-  const isMinCharacters = context.auth.firstPassword.length >= 50;
+  const isMinCharacters = context.auth.firstPassword.length >= 12;
   console.log("PasswordWorkflow: isMinCharacters", isMinCharacters);
   if (!isMinCharacters) {
     kinde.widget.invalidateFormField(
       "p_first_password",
-      "Provide a password at least 50 characters long"
+      "Provide a password at least 12 characters long"
     );
   }
 }
