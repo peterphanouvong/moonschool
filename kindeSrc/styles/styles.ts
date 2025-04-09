@@ -15,6 +15,7 @@ export const getStyles = (): string => `
     --kinde-control-select-text-border-radius: ${kindeVariables.controlSelectTextBorderRadius};
     --kinde-button-primary-color: ${kindeVariables.buttonPrimaryColor};
     --kinde-button-border-radius: ${kindeVariables.buttonBorderRadius};
+    --kinde-shared-color-text-label: ${kindeVariables.baseColor};
 
   }
 
