@@ -34,4 +34,8 @@ export const getStyles = (): string => `
     display: none;
   }
 
+  .kinde-branding a {
+    color: #F49C66;
+  }
+
 `;
