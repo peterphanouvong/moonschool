@@ -10,7 +10,7 @@ import { renderToString } from "react-dom/server.browser";
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Root context={context} request={request}>
-      <DefaultLayout isRegisterPage={true}>
+      <DefaultLayout isRegisterPage={false}>
         <Widget
           heading={context.widget.content.heading}
           description={context.widget.content.description}

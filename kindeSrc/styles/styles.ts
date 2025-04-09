@@ -30,6 +30,8 @@ export const getStyles = (): string => `
     background: linear-gradient(153deg, #F0B376 23.13%, #F29665 69.42%, #DF4D51 177.44%);
   }
 
-
+  [data-kinde-fallback-action] {
+    display: none;
+  }
 
 `;

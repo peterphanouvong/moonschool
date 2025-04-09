@@ -1,4 +1,5 @@
 import React from "react";
+import { Header } from "../components/header";
 
 const styles: {
   container: React.CSSProperties;
@@ -17,9 +18,14 @@ const styles: {
   },
 };
 
-export const DefaultLayout = (props: { children: React.ReactNode }) => {
+export const DefaultLayout = (props: {
+  children: React.ReactNode;
+  isRegisterPage: boolean;
+}) => {
   return (
     <div style={styles.container}>
+      <Header page={props.isRegisterPage ? "register" : "login"} />
+
       <div style={styles.sidePanel}></div>
       {props.children}
     </div>
