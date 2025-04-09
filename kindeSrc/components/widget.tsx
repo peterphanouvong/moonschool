@@ -22,7 +22,7 @@ const styles: {
     fontFamily: "Bricolage Grotesque",
     fontSize: "32px",
     fontWeight: 400,
-    marginBlockEnd: "60px",
+    marginBlock: "60px",
     textAlign: "center",
   },
   logo: {
