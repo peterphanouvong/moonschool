@@ -8,7 +8,7 @@ export const Header = (props: { page: "login" | "register" }) => {
         {`
         .header {
           display: flex;
-          justify-content: ;
+          justify-content: end;
           align-items: center;
           padding: 2rem;
           position: absolute;
