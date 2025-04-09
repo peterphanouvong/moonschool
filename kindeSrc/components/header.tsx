@@ -1,9 +1,4 @@
-import {
-  getDarkModeLogoUrl,
-  getKindeLoginUrl,
-  getKindeRegisterUrl,
-} from "@kinde/infrastructure";
-import React from "react";
+import { getKindeLoginUrl, getKindeRegisterUrl } from "@kinde/infrastructure";
 
 export const Header = (props: { page: "login" | "register" }) => {
   return (
@@ -12,7 +7,7 @@ export const Header = (props: { page: "login" | "register" }) => {
         {`
         .header {
           display: flex;
-          justify-content: space-between;
+          justify-content: end;
           align-items: center;
           padding: 2rem;
           position: absolute;
@@ -29,6 +24,7 @@ export const Header = (props: { page: "login" | "register" }) => {
           cursor: pointer;
           text-decoration: none;
           font-family: Bricolage Grotesque;
+          color: #fff;
         }
 
         @media only screen and (min-width: 1024px) {
