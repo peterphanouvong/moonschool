@@ -15,6 +15,10 @@ export const Header = (props: { page: "login" | "register" }) => {
           justify-content: space-between;
           align-items: center;
           padding: 2rem;
+          position: absolute;
+          width: 100%;
+          top: 0;
+          z-index: 999;
         }
 
         .action-button {
