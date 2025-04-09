@@ -1,4 +1,5 @@
 import { getKindeLoginUrl, getKindeRegisterUrl } from "@kinde/infrastructure";
+import React from "react";
 
 export const Header = (props: { page: "login" | "register" }) => {
   return (
@@ -7,7 +8,7 @@ export const Header = (props: { page: "login" | "register" }) => {
         {`
         .header {
           display: flex;
-          justify-content: end;
+          justify-content: ;
           align-items: center;
           padding: 2rem;
           position: absolute;
