@@ -7,6 +7,7 @@ const styles: {
   loginForm: React.CSSProperties;
   heading: React.CSSProperties;
   description: React.CSSProperties;
+  logo: React.CSSProperties;
 } = {
   loginForm: {
     minWidth: "400px",
@@ -16,11 +17,13 @@ const styles: {
     justifyContent: "center",
   },
   heading: {
-    fontWeight: "600",
-    fontSize: "2rem",
+    fontFamily: "Bricolage Grotesque",
+    fontSize: "32px",
+    fontWeight: 400,
+    marginBlockEnd: "60px",
   },
-  description: {
-    marginBottom: "1.5rem",
+  logo: {
+    width: "180px",
   },
 };
 
@@ -28,8 +31,8 @@ export const Widget = (props: { heading: string; description: string }) => {
   return (
     <main style={styles.loginForm}>
       <div style={{ padding: "2rem" }}>
+        <img style={styles.logo} src={"/logo"} />
         <h2 style={styles.heading}>{props.heading}</h2>
-        <p style={styles.description}>{props.description}</p>
         {getKindeWidget()}
       </div>
     </main>
