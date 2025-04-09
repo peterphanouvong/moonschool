@@ -21,7 +21,7 @@ export const getStyles = (): string => `
 
   @font-face {
     font-family: Bricolage Grotesque;
-    src: url("https://asset.kindedemo.com/moonschool/BricolageGrotesque-VariableFont_opsz%2Cwdth%2Cwght.ttf") format("truetype");
+    src: url(https://asset.kindedemo.com/moonschool/BricolageGrotesque-VariableFont_opsz%2Cwdth%2Cwght.ttf) format(truetype);
     font-weight: 400;
     font-style: normal;
   }
