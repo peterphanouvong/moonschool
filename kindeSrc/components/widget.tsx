@@ -16,6 +16,7 @@ const styles: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    alignItems: "center",
   },
   heading: {
     fontFamily: "Bricolage Grotesque",
@@ -41,7 +42,7 @@ export const Widget = (props: { heading: string; description: string }) => {
         <img style={styles.logo} src={"/logo"} />
       </div>
       <h2 style={styles.heading}>{props.heading}</h2>
-      <div style={{ padding: "1.5rem", maxWidth: "483px" }}>
+      <div style={{ padding: "1.5rem", maxWidth: "483px", width: "100%" }}>
         {getKindeWidget()}
       </div>
     </main>
