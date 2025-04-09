@@ -19,8 +19,17 @@ export const getStyles = (): string => `
 
   }
 
+  @font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("https://asset.kindedemo.com/moonschool/BricolageGrotesque-VariableFont_opsz%2Cwdth%2Cwght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
   [data-kinde-button-variant=primary] { 
     background: linear-gradient(153deg, #F0B376 23.13%, #F29665 69.42%, #DF4D51 177.44%);
   }
+
+
 
 `;
