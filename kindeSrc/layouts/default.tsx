@@ -7,6 +7,8 @@ const styles: {
   container: {
     display: "flex",
     height: "100vh",
+    background:
+      "url(https://s3.ap-southeast-2.amazonaws.com/asset.kindedemo.com/moonschool/image+(2).jpg) lightgray 50% / cover no-repeat",
   },
   sidePanel: {
     borderRadius: "1rem",
