@@ -8,9 +8,14 @@ import React from "react";
 import { renderToString } from "react-dom/server.browser";
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
+  console.log(context, request);
+  console.log("look here");
   return (
     <Root context={context} request={request}>
       <DefaultLayout isRegisterPage={false}>
+        <pre>
+          <code>{JSON.stringify({ context, request }, null, 2)}</code>
+        </pre>
         <Widget
           heading={context.widget.content.heading}
           description={context.widget.content.description}
